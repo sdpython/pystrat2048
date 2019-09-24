@@ -8,7 +8,9 @@ packages = find_packages(where=here)
 package_dir = {k: os.path.join(here, k.replace(".", "/")) for k in packages}
 
 with open(os.path.join(here, "requirements.txt"), "r") as f:
-    requirements = f.read().split("\n")
+    requirements = f.read().strip(' \n\r\t').split('\n')
+if len(requirements) == 0 or requirements == ['']:
+    requirements = []
 
 setup(name='pystrat2048',
       version='0.1',
