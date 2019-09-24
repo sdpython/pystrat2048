@@ -18,7 +18,7 @@ def evaluate_strategy(fct_strategy, ntries=10):
     ::
 
         import random
-        from ensae_teaching_cs.td_1a.cp2048 import evaluate_strategy
+        from pystrat2048 import evaluate_strategy
 
         def random_strategy(game, moves):
             return random.randint(0, 3)

@@ -3,7 +3,8 @@ pystrat2048: simple strategy for 2048
 =====================================
 
 This package does nothing except showing how package
-a function to automatically play at 2048.
+a function to automatically play at `2048
+<https://play2048.co/>`_.
 
 .. toctree::
     :maxdepth: 2

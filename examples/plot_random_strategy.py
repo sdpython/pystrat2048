@@ -15,7 +15,7 @@ from pystrat2048 import evaluate_strategy
 
 ##############################
 # The first strategy :func:`random_strategy
-# <pystrat2048.random_strategy.random_strategy>`_
+# <pystrat2048.random_strategy.random_strategy>`
 # draws a random direction.
 
 gen1 = evaluate_strategy(random_strategy, 50)
@@ -24,8 +24,8 @@ res1.sort()
 print(res1)
 
 ##############################
-# The second strategy :func:`random_strategy
-# <pystrat2048.random_strategy.random_strategy>`_
+# The second strategy :func:`random_strategy_all_but_one
+# <pystrat2048.random_strategy.random_strategy_all_but_one>`
 # draws a random direction among four except one.
 
 gen2 = evaluate_strategy(random_strategy_all_but_one, 50)
