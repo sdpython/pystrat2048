@@ -30,7 +30,7 @@ Run the unit tests:
 
 ::
 
-    python -m unittest discover tests examples
+    python -m unittest discover tests
 
 Or:
 
@@ -42,4 +42,4 @@ To check style:
 
 ::
 
-    python -m flake8 pystrat2048 tests
+    python -m flake8 pystrat2048 tests examples
