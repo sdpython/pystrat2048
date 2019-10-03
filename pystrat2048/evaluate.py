@@ -20,7 +20,7 @@ def evaluate_strategy(fct_strategy, ntries=10):
         import random
         from pystrat2048 import evaluate_strategy
 
-        def random_strategy(game, moves):
+        def random_strategy(game, state, moves):
             return random.randint(0, 3)
 
         scores = list(evaluate_strategy(random_strategy))
@@ -33,6 +33,6 @@ def evaluate_strategy(fct_strategy, ntries=10):
                 g.next_turn()
             except (GameOverException, RuntimeError):
                 break
-            d = fct_strategy(g.game, g.moves)
+            d = fct_strategy(g.game, g.state, g.moves)
             g.play(d)
         yield g.score()

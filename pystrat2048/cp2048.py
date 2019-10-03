@@ -12,6 +12,15 @@ class GameOverException(RuntimeError):
     pass
 
 
+class Game2048State:
+    """
+    To store additional information while guessing the best
+    move.
+    """
+    def __init__(self, game):
+        self.game = game
+
+
 class Game2048:
     """
     Implements the logic of the game 2048.
@@ -24,6 +33,7 @@ class Game2048:
         self.game = (game if game is not None
                      else numpy.zeros((4, 4), dtype=int))
         self.moves = []
+        self.state = Game2048State(self)
 
     def __str__(self):
         "Displays the game as a string."

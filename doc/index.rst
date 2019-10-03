@@ -15,6 +15,8 @@ a function to automatically play at `2048
 
 Sources available on
 `github/pystrat2048 <https://github.com/sdpython/pystrat2048>`_.
+Example :ref:`l-example-with-dummy-strategy` shows
+how to try a new strategy.
 
 *Indices and tables*
 
