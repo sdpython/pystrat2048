@@ -21,7 +21,8 @@ class Game2048:
         """
         :param game: None or matrix 4x4
         """
-        self.game = game or numpy.zeros((4, 4), dtype=int)
+        self.game = (game if game is not None
+                     else numpy.zeros((4, 4), dtype=int))
         self.moves = []
 
     def __str__(self):
