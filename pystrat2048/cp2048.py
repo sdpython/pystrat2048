@@ -114,7 +114,7 @@ class Game2048:
         "Returns the maximum values."
         return numpy.max(self.game)
 
-    def best_move(self, game=None, moves=None):
+    def best_move(self, game=None, state=None, moves=None):
         """
         Selects the best move knowing the current game.
         By default, selects a random direction.
@@ -122,10 +122,13 @@ class Game2048:
 
         :param game: 4x4 matrix or None for the current matrix
         :param moves: all moves since the begining
+        :param state: to store additional values
         :return: one integer
         """
         if game is None:
             game = self.game
+        if state is None:
+            state = self.state
         if moves is None:
             moves = self.moves
         if moves is None:
