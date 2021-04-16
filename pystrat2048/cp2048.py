@@ -17,6 +17,7 @@ class Game2048State:
     To store additional information while guessing the best
     move.
     """
+
     def __init__(self, game):
         self.game = game
 
