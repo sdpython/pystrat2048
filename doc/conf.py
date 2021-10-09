@@ -88,7 +88,8 @@ texinfo_documents = [
 ]
 
 intersphinx_mapping = {
-    "python": ("https://docs.python.org/{.major}".format(sys.version_info), None),
+    "python": ("https://docs.python.org/{.major}".format(
+        sys.version_info), None),
     "numpy": ("https://numpy.org/doc/stable", None),
     "scipy": ("https://docs.scipy.org/doc/scipy/reference", None),
     "matplotlib": ("https://matplotlib.org/", None),
@@ -97,7 +98,8 @@ intersphinx_mapping = {
 
 sphinx_gallery_conf = {
     # path to your examples scripts
-    'examples_dirs': os.path.join(os.path.dirname(__file__), '../examples'),
+    'examples_dirs': os.path.join(
+        os.path.dirname(__file__), '../examples'),
     # path where to save gallery generated examples
     'gallery_dirs': 'auto_examples'
 }
